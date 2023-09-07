@@ -15,8 +15,9 @@ public class GravityFlip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
+            Debug.Log("SDKGJHDSKLGH");
             avatarRigidbody.gravityScale *= -1;
             Vector3 newDirection = avatar.transform.localScale;
             newDirection.y *= -1;

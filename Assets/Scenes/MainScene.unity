@@ -2200,8 +2200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fbfa0ee706fb5488bf2a38198654e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectThrown: {fileID: 231949675}
+  objectThrown: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c,
+    type: 3}
   offset: {x: 0, y: 0, z: 0}
+  throwableCounter: 0
 --- !u!1001 &1341643861
 PrefabInstance:
   m_ObjectHideFlags: 0
