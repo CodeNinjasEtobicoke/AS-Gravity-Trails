@@ -8,6 +8,9 @@ public class EnemyMovement : MonoBehaviour
     public float xForce;
     public float xDirection;
 
+    public int maximunXPosition;
+    public int minimunXPosition;
+
     private Rigidbody2D enemyRigidbody;
     // Start is called before the first frame update
     void Start()
@@ -20,21 +23,23 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
+            enemyRigidbody.AddForce(jumpForce, ForceMode2D.Impulse);
         }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (transform.position.x <= -8)
+        if (transform.position.x <= maximunXPosition)
         {
             xDirection = 1;
-            enemyRigidbody.AddForce(Vector2.right * xForce);
+            Debug.Log("QAZWSXDEDC");
         }
-        if (transform.position.x >= 8)
+        if (transform.position.x >= minimunXPosition)
         {
             xDirection = -1;
-            enemyRigidbody.AddForce(Vector2.left * xForce);
+            Debug.Log("Quack");
         }
+        //enemyRigidbody.AddForce(Vector2.right * xDirection * xForce);
     }
 }
