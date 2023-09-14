@@ -25,6 +25,10 @@ public class EnemyMovement : MonoBehaviour
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidbody.AddForce(jumpForce, ForceMode2D.Impulse);
         }
+        if (collision.gameObject.tag == "ThrowingObject")
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

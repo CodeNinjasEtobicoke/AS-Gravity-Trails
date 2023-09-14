@@ -18,4 +18,14 @@ public class Projectile : MonoBehaviour
     {
         transform.position += direction.offset * Time.deltaTime * speed;
     }
+
+    private void DestroyThrowable()
+    {
+        Destroy(gameObject);
+    }
+
+    public void GameOver()
+    {
+        Invoke("DestroyThrowable", 2.0f);
+    }
 }
