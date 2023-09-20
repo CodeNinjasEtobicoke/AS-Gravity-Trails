@@ -12,6 +12,8 @@ public class EnemyMovement : MonoBehaviour
     public int minimunXPosition;
 
     private Rigidbody2D enemyRigidbody;
+
+    public int enemyCounter;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.tag == "ThrowingObject")
         {
             Destroy(gameObject);
+            enemyCounter -= 1;
         }
     }
 

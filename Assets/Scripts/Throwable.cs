@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwable : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Throwable : MonoBehaviour
     public Vector3 offset;
 
     public int throwableCounter;
+
+    public Text collectableCounter;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,7 @@ public class Throwable : MonoBehaviour
         {
             throwableCounter += 1;
             Destroy(collision.gameObject);
+            collectableCounter.text = throwableCounter.ToString();
         }
     }
 
@@ -33,6 +37,7 @@ public class Throwable : MonoBehaviour
             offset = transform.localScale.x * new Vector3(1, 0, 0);
             Vector3 throwablePosition = transform.position + offset;
             Instantiate(objectThrown, throwablePosition, transform.rotation);
+            collectableCounter.text = throwableCounter.ToString();
         }
     }
 }

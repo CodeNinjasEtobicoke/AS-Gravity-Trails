@@ -9,6 +9,7 @@ TagManager:
   - Collectible
   - Collectable
   - Ground
+  - Exit
   layers:
   - Default
   - TransparentFX
