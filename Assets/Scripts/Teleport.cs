@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Teleport : MonoBehaviour
 {
-    public int enemyCount;
+    public static int enemyCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +15,12 @@ public class Teleport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(enemyCount);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && enemyCount == 0)
+        if (collision.gameObject.tag == "Player" && enemyCount == -12)
         {
             SceneManager.LoadScene(1);
         }

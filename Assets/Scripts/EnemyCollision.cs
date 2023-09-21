@@ -21,7 +21,7 @@ public class EnemyCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene(1);
         }
     }
 }

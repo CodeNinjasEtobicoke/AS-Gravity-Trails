@@ -5,8 +5,9 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public Throwable direction;
-
     public float speed;
+
+
     // Start is called before the first frame update
     void Start()
     {

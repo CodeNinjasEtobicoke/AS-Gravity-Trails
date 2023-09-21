@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -341, y: 185.3}
+  m_AnchoredPosition: {x: -264, y: 167}
   m_SizeDelta: {x: 387.9381, y: 71.35626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &10654180
@@ -495,7 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9fee7b3fa29e5c479b427a3f3cfaca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCount: 0
 --- !u!61 &142023906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -506,7 +505,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -577,7 +576,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142023904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.26, y: -10.58, z: -58.928658}
+  m_LocalPosition: {x: 31.26, y: -10.58, z: -1}
   m_LocalScale: {x: 1.8459071, y: 2.7979536, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1882,7 +1881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.388172, y: 6.5224166, z: -15}
+  m_LocalPosition: {x: -18.132444, y: 6.5224156, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2168,7 +2167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -546, y: 212}
+  m_AnchoredPosition: {x: -468, y: 195}
   m_SizeDelta: {x: 13.084595, y: 12.754593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118430484
@@ -2434,7 +2433,6 @@ MonoBehaviour:
   xDirection: -1
   maximunXPosition: -30
   minimunXPosition: -15
-  enemyCounter: 0
 --- !u!1 &1312392024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919825731887471159, guid: 808b89f9746b7b7498a3a88b37ef5221,
@@ -2731,7 +2729,6 @@ MonoBehaviour:
   xDirection: -1
   maximunXPosition: 20
   minimunXPosition: 25
-  enemyCounter: 0
 --- !u!1 &1347604734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,7 +3665,6 @@ MonoBehaviour:
   xDirection: -1
   maximunXPosition: 10
   minimunXPosition: 21
-  enemyCounter: 0
 --- !u!1 &1800918201
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,7 +4700,6 @@ MonoBehaviour:
   xDirection: -1
   maximunXPosition: -1
   minimunXPosition: 2
-  enemyCounter: 0
 --- !u!1 &2096170769
 GameObject:
   m_ObjectHideFlags: 0

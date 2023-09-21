@@ -36,6 +36,7 @@ public class Throwable : MonoBehaviour
             throwableCounter -= 1;
             offset = transform.localScale.x * new Vector3(1, 0, 0);
             Vector3 throwablePosition = transform.position + offset;
+            
             Instantiate(objectThrown, throwablePosition, transform.rotation);
             collectableCounter.text = throwableCounter.ToString();
         }
