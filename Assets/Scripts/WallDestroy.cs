@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class EnemyCollision : MonoBehaviour
+public class WallDestroy : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,14 +18,10 @@ public class EnemyCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "ThrowingObject")
         {
-            SceneManager.LoadScene(1);
-        }
-
-        if (collision.gameObject.tag == "Fire")
-        {
-            SceneManager.LoadScene(1);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
