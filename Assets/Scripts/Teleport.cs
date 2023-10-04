@@ -28,6 +28,7 @@ public class Teleport : MonoBehaviour
         {
             isUsed = true;
             SceneManager.LoadScene(2);
+            Debug.Log("QASWEDFRTGHYUJIKOLP");
         }
     }
 }
